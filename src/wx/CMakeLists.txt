@@ -501,7 +501,7 @@ int main(int argc, char** argv) {
                     list(APPEND VBAM_LIBS ${GTK2_LIBRARIES})
                 endif()
             else()
-                find_package(GTK REQUIRED gtk)
+                find_package(GTK3 REQUIRED gtk)
                 if(NOT GTK_INCLUDE_DIRS)
                     message(FATAL_ERROR "Could not find gtk")
                 endif()
